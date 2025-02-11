@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HI lablab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Fixed class name (removed extra space) -->
+        <div class="tenor-gif-embed" data-postid="22885016" data-share-method="host" data-aspect-ratio="1.04918"
+            data-width="100%"><a href="https://tenor.com/view/manja-gif-22885016">Manja Sticker</a>from <a
+                href="https://tenor.com/search/manja-stickers">Manja Stickers</a></div>
+        <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+        <h1>Will you be my valentine? UwU</h1>
+        <p>
+           PLEASEEE BABYY HUHU UWU EVEN IF DI TA MAG KITA
+        </p>
+
+        <div class="btn">
+            <a href="yes.html">Yes</a>
+            <a href="#" id="move-random">NO</a>
+        </div>
+    </div>
+
+    <!-- Fixed script path & added DOMContentLoaded -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const moveRandom = document.querySelector("#move-random");
+
+            function moveRandomEl(elm) {
+                elm.style.position = "absolute";
+                elm.style.top = Math.min(Math.max(Math.random() * 90, 5), 85) + "%";
+                elm.style.left = Math.min(Math.max(Math.random() * 90, 5), 85) + "%";
+            }
+
+            moveRandom.addEventListener("mouseenter", function () {
+                moveRandomEl(this);
+            });
+        });
+    </script>
+</body>
+
+</html>
